@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Navigation</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Styling */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #007BFF; /* Warna hover */
+    }
+
+    /* Main Section Styling */
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      width: 80%;
+    }
+
+    .box {
+      background-color: #e0e0e0;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+    }
+
+    .box a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .box:hover {
+      background-color: #d0d0d0;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk layar lebih kecil */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk ponsel */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index01.html">Home</a></li>
+                <li><a href="index02.html">Hubungi Kami</a></li>
+                <li><a href="index03.html">Bisnis</a></li>
+                <li><a href="index04.html">publikasi</a></li>
+                <li><a href="index05.html">Kehadiran Global</a></li>
+                <li><a href="index06.html">Produk</a></li>
+                <li><a href="index13.html">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="grid">
+      <div class="box"><a href="index7.html">said</a></div>
+      <div class="box"><a href="index8.html">Prima</a></div>
+      <div class="box"><a href="index9.html">putri</a></div>
+      <div class="box"><a href="index10.html">eka</a></div>
+      <div class="box"><a href="index11.html">vera</a></div>
+      <div class="box"><a href="index12.html">sapta</a></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 My Portfolio. All Rights Reserved.
+  </footer>
+</body>
+</html>
